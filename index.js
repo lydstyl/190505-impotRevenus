@@ -10,8 +10,8 @@ function Personne(revenusNus, revenusMeuble, nbPart) {
 
   this.impots = [
     { nom: "Taxe foncière Raismes", montant: 600 },
-    { nom: "Taxe foncière Roubaix", montant: 400 },
-    { nom: "Taxe foncière St Amand", montant: 400 }
+    { nom: "Taxe foncière Roubaix", montant: 289 },
+    { nom: "Taxe foncière St Amand", montant: 360 }
   ];
   this.calcImpotFoncier(this.revenusNus);
   this.calcImpotFoncier(this.revenusMeuble, true);
@@ -81,5 +81,5 @@ Personne.prototype.calcRevenusMensuelApresImpots = function() {
   return (this.revenusTotal - this.impotTotal) / 12;
 };
 
-const gabriel = new Personne((550 + 410) * 12, 300 * 3 * 12, 1.5);
-console.log(gabriel);
+const toto = new Personne((550 + 410) * 12, 300 * 3 * 12, 1.5);
+console.log(toto);
